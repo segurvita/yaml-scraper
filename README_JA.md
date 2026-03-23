@@ -1,4 +1,4 @@
-# yaml-scraper [![Build Status](https://travis-ci.org/segurvita/yaml-scraper.svg?branch=master)](https://travis-ci.org/segurvita/yaml-scraper)
+# yaml-scraper [![CI](https://github.com/segurvita/yaml-scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/segurvita/yaml-scraper/actions/workflows/ci.yml)
 <div style="text-align:right">Language: <a href="README.md">English</a> | <i>日本語</i></div>
 yamlファイルを軽量化するnpmモジュールを作りました。指定した要素を削除または空白にします。 `scraper` というのは削り取るというニュアンスの言葉です。
 

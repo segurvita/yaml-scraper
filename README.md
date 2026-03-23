@@ -1,15 +1,14 @@
 # yaml-scraper [![CI](https://github.com/segurvita/yaml-scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/segurvita/yaml-scraper/actions/workflows/ci.yml)
+
 <div style="text-align:right">Language: <i>English</i> | <a href="README_JA.md">日本語</a></div>
 
+![hero](docs/images/hero.jpg)
+
 Delete or empty specified items to lighten your YAML document.
-
-
 
 # Purpose
 
 The purpose of this module is to avoid capacity limit errors that occur when importing a swagger file into Amazon API Gateway.
-
-
 
 # Usage
 
@@ -23,24 +22,22 @@ Please call the module as following.
 
 ```javascript
 // import package
-const fs = require('fs');
-const scraper = require('yaml-scraper');
+const fs = require("fs");
+const scraper = require("yaml-scraper");
 
 // read yaml file
-const input = fs.readFileSync('./sample.yaml', 'utf8');
+const input = fs.readFileSync("./sample.yaml", "utf8");
 
 // delete example and empty description and delete parent of deprecated
 const output = scraper(input)
-  .delete('example')
-  .empty('description')
-  .deleteParent('deprecated')
+  .delete("example")
+  .empty("description")
+  .deleteParent("deprecated")
   .toString();
 
 // display result
 console.log(output);
 ```
-
-
 
 # API
 
@@ -63,8 +60,6 @@ Delete the element whose child has `target`. It can be used for method chain.
 ### toString()
 
 Generate a YAML format string based on the current data and return it.
-
-
 
 # Development
 
